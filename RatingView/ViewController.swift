@@ -28,7 +28,7 @@ class ViewController: UIViewController {
 extension ViewController : RatingViewDelegate {
     internal func ratingControl(ratingControl: RatingControl, changedToNewRate: Int) {
         print("[delegate]rate = \(changedToNewRate)")
-    }    
+    }
 }
 
 protocol RatingViewDelegate {
@@ -56,8 +56,8 @@ class RatingControl: UIView {
     
     fileprivate func initializer() {
         self.backgroundColor = UIColor.clear
-        self.layer.borderColor = UIColor.red.cgColor
-        self.layer.borderWidth = 1.0
+        //self.layer.borderColor = UIColor.red.cgColor
+        //self.layer.borderWidth = 1.0
     }
     
     override func draw(_ rect: CGRect) {
